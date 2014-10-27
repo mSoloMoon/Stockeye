@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stockeye="http://schemas.android.com/apk/res-auto/com.msolo.stockeye.gui.custom.NumberProgressBar"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="@dimen/navigation_drawer_width_large"
+    android:layout_height="match_parent"
+    android:background="@color/drawer_background" >
+
+    <ImageView android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_logo" />
+
+    <TextView android:id="@+id/startpoint"
+        android:layout_below="@id/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/navigation_drawer_margin_left_large"
+        style="@style/stock_asset_theme_large"
+        android:text="初始：￥6,710\t购买：2010-09-16" />
+
+    <com.msolo.stockeye.gui.custom.NumberProgressBar
+        android:id="@+id/pb_stock_share_dealing"
+        android:layout_below="@id/startpoint"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/navigation_drawer_margin_left_large"
+        android:layout_marginRight="@dimen/navigation_drawer_margin_right_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        stockeye:progress_unreached_color="#BEBEBE"
+        stockeye:progress_reached_color="@color/brightred"
+        stockeye:progress_unreached_bar_height="6dp"
+        stockeye:progress_reached_bar_height="6dp"
+        stockeye:progress_text_size="14sp"
+        stockeye:progress_text_color="@color/brightred"
+        stockeye:progress_text_offset="4dp"
+        stockeye:progress_text_visibility="visible"
+
+        stockeye:max="100"
+        stockeye:progress="14.36"
+        android:clickable="true"
+        android:onClick="onStockShareDealingClick" />
+
+    <TextView android:id="@+id/currentpoint"
+        android:layout_below="@id/pb_stock_share_dealing"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/navigation_drawer_margin_right_large"
+        style="@style/stock_asset_theme_large"
+        android:text="现值：￥7,670\t最高：￥9,440" />
+
+    <TextView android:id="@+id/divider"
+        android:layout_below="@id/currentpoint"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="@dimen/navigation_drawer_divider_margin_right"
+        android:shadowColor="@color/white"
+        android:background="@color/drawer_divider" />
+
+    <TableRow android:id="@+id/sh_stock"
+        android:layout_below="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/navigation_drawer_margin_left_large"
+        android:layout_marginRight="80dp"
+        android:weightSum="2.4" >
+        <TextView android:id="@+id/sh_stocks_name"
+            style="@style/drawer_stock_list_theme"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:gravity="left" />
+        <TextView android:id="@+id/sh_stocks_price"
+            style="@style/drawer_stock_list_theme"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow android:id="@+id/sz_stock"
+        android:layout_below="@id/sh_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/navigation_drawer_margin_left_large"
+        android:layout_marginRight="80dp"
+        android:weightSum="2.4" >
+        <TextView android:id="@+id/sz_stocks_name"
+            style="@style/drawer_stock_list_theme"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:gravity="left" />
+        <TextView android:id="@+id/sz_stocks_price"
+            style="@style/drawer_stock_list_theme"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </TableRow>
+
+    <TextView android:id="@+id/stock_self_list"
+        android:layout_below="@id/sz_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_drawer_margin_left_large"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/stock_self_list" />
+
+    <TextView android:id="@+id/stock_count"
+        android:layout_below="@id/sz_stock"
+        android:layout_toRightOf="@+id/stock_self_list"
+        android:background="@drawable/square_white_16"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        style="@style/stock_count_theme_font_black_xlarge"
+        android:text="0" />
+
+    <include layout="@layout/navigation_drawer_stock_self_list_op" />
+
+    <ListView android:id="@+id/stock_list"
+        android:layout_below="@id/stock_self_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="80dp"
+        android:listSelector="@drawable/round_rectangle_line_red"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+</RelativeLayout>

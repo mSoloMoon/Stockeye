@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="drawer_background">#2C3240</color>
+    <color name="drawer_divider">#61DBFF</color>
+    <color name="drawer_op_background">#61DBFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="cyan">#23A3AC</color>
+    <color name="asphalt">#34495D</color>
+    <color name="gray">#555555</color>
+    <color name="darkgray">#3E3E3E</color>
+    <color name="brightred">#BE0D15</color>
+    <color name="darkred">#7A1723</color>
+    <color name="red">#7F1D28</color>
+    <color name="bluegreen">#315C86</color>
+    <color name="green">#1D953F</color>
+    <color name="purple">#394165</color>
+    <color name="grape">#695B8E</color>
+    <color name="orange">#EC8C67</color>
+    <color name="yellow">#FFDE00</color>
+    <color name="whiteblue">#93CEE0</color>
+    <color name="greenblue">#2A7C9F</color>
+    <color name="blue">#249FF1</color>
+    <color name="skyblue">#3DABEA</color>
+    <color name="lightblue">#00B8F0</color>
+    <color name="goldentea">#DC5726</color>
+</resources>

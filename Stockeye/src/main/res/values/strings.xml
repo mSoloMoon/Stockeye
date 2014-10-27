@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="type_normal">n</string>
+    <string name="type_large">l</string>
+
+    <string name="app_name">XPStockeye</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- default stock list -->
+    <string-array name="default_stock_array">
+        <item>sh000001_上证指数_+6124.04 (1.03%)</item>
+        <item>sz399001_深圳成指_-19559.42 (1.98%)</item>
+    </string-array>
+
+    <!-- transaction typeic type -->
+    <string name="type_day">日</string>
+    <string name="type_week">周</string>
+    <string name="type_month">月</string>
+    <string name="type_quarter">季</string>
+    <string name="type_year">年</string>
+
+    <string-array name="other_period">
+        <item>其它</item>             <!-- 0 -->
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>日期范围</item>         <!-- 6 -->
+        <item>开盘大于收盘</item>
+        <item>开盘等于收盘</item>
+        <item>开盘小于收盘</item>
+        <item>时间差小于等于2</item>
+        <item>时间差小于等于3大于2</item>
+        <item>最高价高于最低价10%</item>
+        <item>定制</item>
+    </string-array>
+
+    <!-- drawer section-->
+    <string name="home">主页</string>
+    <string name="setting">设置</string>
+    <string name="stock_download">下载</string>
+    <string name="stock_refresh">更新</string>
+    <string name="stock_report">报告</string>
+    <string name="stock_price_precautionary">预警</string>
+    <string name="stock_article">资讯</string>
+    <string name="stock_note">笔记</string>
+    <string name="stock_chat">论股</string>
+    <string name="stock_self_list">自选股</string>
+
+    <string name="expand_stock_self_list">面板扩展</string>
+    <string name="share_stock_info">信息共享</string>
+    <string name="add_stock">添加股票</string>
+    <string name="del_stock">删除股票</string>
+
+    <!-- dialog add and delete stock -->
+    <string name="add_stock_prompt">请输入带前缀sh(上海)或sz(深圳)的股票代码</string>
+    <string name="del_stock_prompt">请勾选要删除的股票</string>
+    <string name="hint">sh601857</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <!-- for stock brief -->
+    <string name="last_price">昨收</string>
+    <string name="highest_price">最高</string>
+    <string name="lowest_price">最低</string>
+    <string name="total_tran_count">交易数</string>
+    <string name="total_price_count">价格数</string>
+    <string name="total_vol">总手</string>
+    <string name="total_money">总金额</string>
+
+    <!-- for stock detail -->
+    <string name="tran_title">交易情况</string>
+    <string name="chart_title">图表</string>
+    <string name="k_chart">K线图</string>
+    <string-array name="price_menu">
+        <item>34笔成交量最多的交易</item>
+        <item>交易概况</item>
+        <item>交易按时间排列</item>
+        <item>交易按价格排列</item>
+        <item>交易按成交量排列</item>
+        <item>交易按交易数排列</item>
+    </string-array>
+
+    <!-- for login -->
+    <string name="title_activity_fragment_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">电子邮件地址</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">注册或登录</string>
+    <string name="action_sign_in_short">登录</string>
+
+    <string name="error_invalid_email">电子邮件地址错误</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不存在</string>
+    <string name="error_field_required">请输入</string>
+    <string name="copyright">© 2014 msolo.stockeye.com\n免责声明</string>
+
+</resources>

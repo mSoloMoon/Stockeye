@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <ImageView android:id="@+id/home"
+        style="@style/drawer_op_theme"
+        android:src="@drawable/home_circle_32"
+        android:onClick="onNavigationTabClick" />
+    <ImageView android:id="@+id/notebook"
+        style="@style/drawer_op_theme"
+        android:src="@drawable/note_circle_32"
+        android:onClick="onNavigationTabClick"  />
+    <ImageView android:id="@+id/download"
+        style="@style/drawer_op_theme"
+        android:src="@drawable/download_circle_32"
+        android:onClick="onNavigationTabClick" />
+    <ImageView android:id="@+id/update"
+        style="@style/drawer_op_theme"
+        android:src="@drawable/update_circle_32"
+        android:onClick="onNavigationTabClick" />
+    <ImageView android:id="@+id/logout"
+        style="@style/drawer_op_theme"
+        android:src="@drawable/logout_circle_32"
+        android:onClick="onNavigationTabClick"  />
+
+</TableRow>

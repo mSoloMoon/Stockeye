@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/del_stocklist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1" >
+
+    <TextView android:id="@+id/stock_asset_rec"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="shenme" />
+
+    <TextView android:id="@+id/asset_percentage"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text="shenme" />
+
+    <CheckBox
+        android:id="@+id/chk_del_stock"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical" />
+
+</TableRow>

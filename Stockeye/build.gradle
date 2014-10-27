@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+project.description = 'Stockeye : personal stock management product'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        applicationId "com.msolo.stockeye"
+        minSdkVersion 11
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard true
+            proguardFiles 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/jsoup-1.7.3.jar')
+    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.+'
+    compile 'com.daimajia.numberprogressbar:library:1.1@aar'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.1'
+    compile 'de.hdodenhof:circleimageview:1.2.0'
+}

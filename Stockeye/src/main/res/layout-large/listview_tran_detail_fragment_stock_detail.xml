@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5.6"
+    android:background="@color/drawer_background"
+    android:id="@+id/listview_item_for_spinner" >
+    <TextView android:id="@+id/item_for_time"
+        style="@style/detailSpinnerItemTheme"
+        android:layout_weight="1.2" />
+    <TextView android:id="@+id/item_for_price"
+        style="@style/detailSpinnerItemTheme"
+        android:paddingLeft="2dp"
+        android:paddingRight="0dp"
+        android:layout_weight="1" />
+    <TextView android:id="@+id/item_for_pricecount"
+        style="@style/detailSpinnerItemTheme"
+        android:paddingLeft="2dp"
+        android:paddingRight="0dp"
+        android:layout_weight="1" />
+    <TextView android:id="@+id/item_for_volume"
+        style="@style/detailSpinnerItemTheme"
+        android:paddingLeft="2dp"
+        android:paddingRight="0dp"
+        android:layout_weight="1.2" />
+    <TextView android:id="@+id/item_for_money"
+        style="@style/detailSpinnerItemTheme"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_weight="1.2" />
+</LinearLayout>

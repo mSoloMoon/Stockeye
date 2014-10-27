@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stock_section"
+    android:layout_below="@id/currentpoint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="@dimen/navigation_drawer_margin_left"
+    android:layout_marginRight="@dimen/navigation_drawer_margin_right" >
+
+    <TextView android:id="@+id/stock_report"
+        style="@style/stock_setion_theme"
+        android:gravity="left"
+        android:text="@string/stock_report"
+        android:onClick="onNavigationTabClick" />
+    <TextView android:id="@+id/stock_price_precautionary"
+        style="@style/stock_setion_theme"
+        android:gravity="center_horizontal"
+        android:text="@string/stock_price_precautionary"
+        android:onClick="onNavigationTabClick" />
+    <TextView android:id="@+id/stock_article"
+        style="@style/stock_setion_theme"
+        android:gravity="center_horizontal"
+        android:text="@string/stock_article"
+        android:onClick="onNavigationTabClick" />
+    <TextView android:id="@+id/stock_chat"
+        style="@style/stock_setion_theme"
+        android:gravity="center_horizontal"
+        android:text="@string/stock_chat"
+        android:onClick="onNavigationTabClick" />
+
+</TableRow>

@@ -1,0 +1,96 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ActivityMain" >
+
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width_large"
+        android:layout_height="match_parent"
+        android:name="com.msolo.stockeye.gui.activity.FragmentNavigationDrawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/drawer_background" >
+
+        <TableRow android:id="@+id/stock_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp" >
+
+            <TextView android:id="@+id/home"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/home_circle_24"
+                android:text="@string/home" />
+            <TextView android:id="@+id/setting"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/setting_1_circle_24"
+                android:text="@string/setting" />
+            <TextView android:id="@+id/download"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/download_circle_24"
+                android:text="@string/stock_download" />
+            <TextView android:id="@+id/update"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/update_circle_24"
+                android:text="@string/stock_refresh" />
+            <TextView android:id="@+id/stock_report"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/report_gradute_circle_24"
+                android:text="@string/stock_report" />
+            <TextView android:id="@+id/stock_price_precautionary"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/precautionary_alarm_circle_24"
+                android:text="@string/stock_price_precautionary" />
+            <TextView android:id="@+id/stock_article"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/article_circle_24"
+                android:text="@string/stock_article" />
+            <TextView android:id="@+id/notebook"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/note_circle_24"
+                android:onClick="onNotebookClick"
+                android:text="@string/stock_note" />
+            <TextView android:id="@+id/stock_chat"
+                style="@style/stock_setion_theme_large"
+                android:drawableLeft="@drawable/chat_circle_24"
+                android:text="@string/stock_chat" />
+
+        </TableRow>
+
+        <TextView android:id="@+id/chat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/circle_red_16"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="28" />
+
+        <FrameLayout android:id="@+id/content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/stock_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/drawer_background" />
+
+    </RelativeLayout>
+
+</LinearLayout>
