@@ -15,5 +15,6 @@ An mobile app aims to help people for analyzing the stock transaction itself. al
 
 ### To do ###
 
+* Provide the stock price voice service (in progress)
 * Provide the Stock Asset service
 * Provide the Stock Report service
